@@ -1,0 +1,15 @@
+const {models} = require('./../libs/sequelize.js')
+
+class UserService {
+    constructor(){
+        this.model = models.User
+    }
+    
+    async getAll(){
+        const users = await this.model.findAll()
+        return users
+    }
+
+}
+
+module.exports = UserService

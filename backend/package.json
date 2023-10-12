@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js./src/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrations:generate": "sequelize-cli migration:generate --name"
   },
   "keywords": [],
   "author": "",
