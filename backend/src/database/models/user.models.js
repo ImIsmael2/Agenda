@@ -1,7 +1,7 @@
-const {DataTypes, Model} = require ("sequelize");
+const {DataTypes, Model} = require ('sequelize');
 const USER_TABLE = 'users'
 
-const userSchema = {
+const UserSchema = {
     id:{
         type:DataTypes.INTEGER,
         autoIncrement: true,
@@ -38,4 +38,4 @@ class User extends Model{
     }
 }
 
-module.exports = {USER_TABLE,userSchema,User}
+module.exports = {USER_TABLE,UserSchema,User}

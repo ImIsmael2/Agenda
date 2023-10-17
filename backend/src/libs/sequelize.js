@@ -9,7 +9,7 @@ const URI = `mysql://${USER}:${PASSWORD}@${dbHost}:${dbPort}/${dbName}`
 
 const sequelize = new Sequelize(URI,{
     dialect:'mysql',
-    logging: env=='dev'
+    logging: env =='dev'
 })
 
 setupModels(sequelize)

@@ -1,13 +1,13 @@
-const express = require ('express')
-const {port: APP_PORT, port} = require ('./config/config')
-const routerApi = require('./routes')
+const express = require("express");
+const { port: APP_PORT, port } = require("./config/config");
+const routerApi = require("./routes")
 
-const app = express()
+const app = express();
 
-app.use(express.json())
+app.use(express.json());
 
-routerApi(app)
+routerApi(app);
 
 app.listen(port, () => {
-    console.log(`App running on ${port}`)
-})
+  console.log(`App running on port ${port}`);
+});
